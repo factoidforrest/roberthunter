@@ -6,6 +6,6 @@ staticOpts = {maxAge: aDay}
 module.exports = {
 	root: (req, res) ->
 		section = req.param "section"
-		section ||= "play"
+		section ||= "main"
 		res.render('root.jade', {section: section})
   }

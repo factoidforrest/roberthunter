@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://git@github.com:light24bulbs/sudoku.git"
+    "url": "git://git@github.com:light24bulbs/node-template.git"
   },
   "author": "Forrest Allison",
   "license": "GPL",
   "bugs": {
-    "url": "https://github.com/light24bulbs/sudoku/issues"
+    "url": "https://github.com/light24bulbs/node-template/issues"
   },
-  "homepage": "https://github.com/light24bulbs/sudoku"
+  "homepage": "https://github.com/light24bulbs/node-template"
 }
