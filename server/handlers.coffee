@@ -1,11 +1,16 @@
 ##sass = require('node-sass')
 ##fs = require('fs')
-aDay = 86400000;
-staticOpts = {maxAge: aDay}
 
-module.exports = {
-	root: (req, res) ->
-		section = req.param "section"
-		section ||= "main"
-		res.render('root.jade', {section: section})
-  }
+
+exports.home = (req, res) -> 
+	res.render 'home.jade', {section: 'home'}
+
+  
+
+exports.tables = (req, res) -> 
+	table = req.param 'table'
+	if (table)
+		res.render 'table.jade', {section: 'tables', table: table}
+	else
+		res.render 'tables.jade', {section: 'tables'}
+

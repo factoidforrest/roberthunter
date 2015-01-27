@@ -1,5 +1,6 @@
 .container
   nav.navbar.navbar-default
+    span.hidden#active-section(data-active=section, data-table=table || '')
     .container-fluid
         // Brand and toggle get grouped for better mobile display
         .navbar-header
@@ -8,39 +9,39 @@
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='#') Robert Hunter
+          a.navbar-brand(href='/') Robert Hunter
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
-            li.dropdown
+            li.dropdown#tables
               a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                | Tables 
+                | Products 
                 span.caret
               ul.dropdown-menu(role='menu')
-                li
-                  a(href='#') Deschutes
-                li
-                  a(href='#') Santiam
-                li
-                  a(href='#') McKenzie
-                li
-                  a(href='#') Columbia
+                li#deschutes
+                  a(href='/tables/deschutes') Deschutes
+                li#santiam
+                  a(href='/tables/santiam') Santiam
+                li#mcKenzie
+                  a(href='/tables/mckenzie') McKenzie
+                li#columbia
+                  a(href='/tables/columbia') Columbia
                 li.divider   
-                li
-                  a(href='#') All tables
+                li#all
+                  a(href='/tables') All tables
                 li.divider 
-                li  
+                li#accessories
                   a(href='#') Accessories 
-            li.active
-              a(href='#')
+            li#faq
+              a(href='faq')
                 | Frequent Questions  
                 span.glyphicon.glyphicon-question-sign(aria-hidden="true")
-            li
-              a(href='#') 
+            li#about
+              a(href='about') 
                 | About Us  
                 span.glyphicon.glyphicon-info-sign(aria-hidden="true")
-            li
-              a(href='#') 
+            li#contact
+              a(href='contact') 
                 | Contact 
                 span.glyphicon.glyphicon-earphone(aria-hidden="true")
 

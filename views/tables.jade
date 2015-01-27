@@ -1,0 +1,41 @@
+
+
+
+extends layout
+block content
+	link(rel="stylesheet", type="text/css", href="tables.css")
+	.page-header.container.text-center
+		h2 Tables
+	.container.tables-list
+		.col-md-2
+			.list-group
+				a.list-group-item(href='/tables/deschutes') Deschutes
+				a.list-group-item(href='/tables/deschutes') Santiam
+				a.list-group-item(href='/tables/deschutes') Mckenzie
+				a.list-group-item(href='/tables/deschutes') Deschutes
+			.list-group
+				a.list-group-item(href='/accessories') Accessories
+
+
+		.col-md-10
+			.col-md-6.text-center.item
+				img.img-rounded(src='/images/tables/deschutes.jpg')
+				p
+					h3
+						|Deschutes
+					span
+						|A lightweight table for house calls
+			.col-md-6.text-center.item
+				img.img-rounded(src='/images/tables/santiam.jpg')
+				p
+					h3
+						|Santiam
+					span
+						|This table is awesome for heavier clients
+			.col-md-6.text-center.item
+				img.img-rounded(src='/images/tables/mckenzie.jpg')
+				p
+					h3
+						|Mckenzie
+					span
+						|This table is for when you are massaging the hulk

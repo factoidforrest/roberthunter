@@ -41,7 +41,9 @@ else
 app.use(express.static(__dirname + '/public', { maxAge: cachetime }))
 
 #static file routes
-app.get('/:section?', handlers.root)
+
+app.get('/', handlers.home)
+app.get('/tables/:table?', handlers.tables)
 
 app.listen(process.env.PORT || 3000)
 
