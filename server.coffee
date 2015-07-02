@@ -2,8 +2,7 @@
 express = require('express')
 app = express()
 coffeescript = require('connect-coffee-script')
-handlers = require('./server/handlers')
-sass = require('node-sass')
+sass = require('node-sass-middleware')
 path = require('path')
 favicon = require('serve-favicon')
 
@@ -17,7 +16,7 @@ app.locals.uglify = production
 
 app.set('view engine', 'jade')
 
-app.use(sass.middleware({
+app.use(sass({
   src: __dirname + '/views/stylesheets',
   dest: __dirname + '/public',
   debug: !production,
@@ -42,8 +41,9 @@ app.use(express.static(__dirname + '/public', { maxAge: cachetime }))
 
 #static file routes
 
-app.get('/', handlers.home)
-app.get('/tables/:table?', handlers.tables)
+require('./server/routes')(app)
+#app.get('/', handlers.home)
+#app.get('/tables/:table?', handlers.tables)
 
 app.listen(process.env.PORT || 3000)
 

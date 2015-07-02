@@ -28,3 +28,10 @@ You should be good to go!
 #####Server
 The server lives in server.coffee in the root project directory.  It takes care of serving assets and compiling them if necessary.  The views folder contains assets which compile into the public directory.  The Public folder holds assets which do not need to be compiled and are served directly by the node static asset server.  
 
+
+
+##Notes
+
+Table hoverover will have: price, whatever else
+
+table detail page will have list of accessories than can be added to table

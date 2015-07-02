@@ -1,3 +1,59 @@
 extends layout
 block content
-	|show specific table: #{table}
+	link(rel="stylesheet", type="text/css", href="/table.css")
+	.container
+		.page-header.text-center
+			h1.table-name #{capitalizedTable}
+		.description
+			.row.intro
+				.col-md-4
+					img.img-responsive(src='/images/tables/#{table}.jpg')
+				.col-md-8
+					p.intro-paragraph
+						|Quisque porttitor ullamcorper odio, pellentesque suscipit elit sollicitudin et. Maecenas vitae tellus vitae diam luctus consectetur eu dapibus odio. Nulla nec arcu nec ligula congue ultrices. Cras sed augue at mi hendrerit tincidunt in vitae purus. Vivamus mattis nec tortor non malesuada. Sed nisi libero, vestibulum scelerisque diam vel, ullamcorper tincidunt lacus. Nullam quis mollis eros. Nulla vel feugiat orci, vel hendrerit felis.
+			.row.details
+				.feature-lists
+
+					ul.list-group.col-md-4.features
+						li.list-group-item.title.text-center
+							h3.list-group-item-heading Features
+						li.list-group-item 5 Year Warranty
+						li.list-group-item Footrest and Headrest Holes
+						li.list-group-item Locking Pin Brace System
+						li.list-group-item Full Length Piano Hinge
+						li.list-group-item Alder Legs
+						
+					ul.list-group.dimensions.col-md-4
+						li.list-group-item.title.text-center
+							h3.list-group-item-heading Dimensions
+						li.list-group-item 2.25" Foam
+						li.list-group-item Height Range: 24” to 35”
+						li.list-group-item Length: 75”
+						li.list-group-item 3mm Platform
+						li.list-group-item Table Widths: 29” & 31”
+
+					ul.list-group.weight.col-md-4
+						li.list-group-item.title.text-center
+							h3.list-group-item-heading Weight
+						li.list-group-item Static Weight: 2500 lbs
+						li.list-group-item Working Weight: 1100 lbs
+						li.list-group-item Table Weight: 29 to 31 lbs.
+
+
+		.customize
+			.page-header.text-center
+				h2.customize-header Customize
+			.col-md-3
+				h3.text-center Color
+				.color.btn-group-vertical(role='group')
+					button.btn.btn-default.cream Cream
+					button.btn.btn-default.agate Agate
+					button.btn.btn-default.hunter Hunter
+					button.btn.btn-default.burgundy Burgundy
+					button.btn.btn-default.purple Purple
+					button.btn.btn-default.black Black
+
+
+
+
+

@@ -5,6 +5,17 @@
 		img {
 			height: 185px;
 		}
+		border-style: solid;
+		border-width: 1px;
+		border-color: white;
+
+
+	}
+	.item:hover {
+		border-style: solid;
+		border-width: 1px;
+		border-color: rgb(224, 224, 224);
+		border-radius: 8px;
 	}
 }
 
